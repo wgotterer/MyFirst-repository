@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXT Website</title> 
-    <link rel= "stylesheet" href = "style.css" /> 
+    <link rel= "stylesheet" href = "form.css" /> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,43 +47,146 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>THE PERFECT DESTINATION</h1>
-                <h2>FOR YOU</h2>
-                <p>See what makes us different. </p>
-                <button class="main__btn"><a href="/personaldata.html">Get Started</a></button>
-            </div>
-                <div class="main__img--container">
-                    <img src="images/beachpic.jpg" alt="pic" id="main__img">
-                    <!-- <video autoplay muted loop id="vid1">
-                        <source src= "nightvid.mp4" type="video/mp4">
-                        Your browser does not support html 5 video.
-                    </video> -->
-                    
-                </div>
-            </div>
-        </div>
-   
+  <!--Form Section-->
 
-    <!--Services Section-->
-    <div class="services">
-        <h1>New Destinations</h1>
-        <div class="services__container">
-            <div class="services__card">
-                <h2>Explore Italy</h2>
-                <p>Off the beaten path</p>
-                <button>Get More Info</button>
-            </div>
-            <div class="services__card">
-                <h2>Fly High in Switzerland</h2>
-                <p>Bewilder your eyes</p>
-                <button>Get More Info</button>
-            </div>
-        </div>
-    </div>
+
+	<h1>Tell Us About Your Dream Vacation</h1>
+    <h2>And We Will Send The Best Locations</h2>
+    <h3>To Make It All Come True</h3>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which type of vacation would you like?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="romantic">Romantic</option>
+				<option value="adventure">Adventure</option>
+				<option value="family">
+					Family
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Would you like an all-inclusive stay?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>What would you like to do?
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Scuba dive</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Wine-tasting</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Food tour</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Hiking</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Museums</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Surf</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Beach</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Shop</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Attraction park</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Sporting events</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
+
 
  <!--Footer Section-->
 

@@ -196,6 +196,81 @@
 }
 
 
+
+/* Form Section CSS */
+
+body {
+    background-color: #3fa2c0;
+    font-family: 'Kumbh Sans' , sans-serif;
+    text-align: center;
+}
+
+body h1, h2, h3 {
+    background-color: #4e8a3b;
+    background-image: linear-gradient(to top, #016d49 0%, #2b1fd3 100% );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: .4px 3px 10px 20px rgba(207, 37, 80, 0.5);
+}
+
+/* Styling form-control Class */
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Styling form-control input,
+select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+/* Styling form-control Radio
+button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+/* Styling Button */
+button {
+    background: #9d8df5;
+    color: #fff;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
 /*Hero Section CSS */
 .main {
     background-color: #3fa2c0; ;
